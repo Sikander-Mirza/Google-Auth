@@ -16,6 +16,10 @@ const pool = new Pool({
     max: 10
 });
 
+app.get("/",(req,res)=>{
+    res.send("Hello World");
+})
+
 app.listen(port, (err) => {
     if (err) console.log(err);
     console.log(`Server is running on port : ${port}`);
